@@ -1,2 +1,2 @@
-# mongostore
+# MongoFire
 A simple MongoDB python driver

@@ -65,7 +65,7 @@ db.collection('users').document('doc_id').delete()
 ```
 
 ## Documentation
-If you want to know how to delete or update multiple documents or delve into the lib, read the full documentation at  [mongofire.readthedocs.io](https//mongofire.readthedocs.io).
+If you want to know how to delete or update multiple documents or delve into the lib, read the full documentation at  [mongofire.readthedocs.io](https://mongofire.readthedocs.io).
 
 ## Contributing
 We welcome contributions from the community. To contribute to the library, please follow these steps:

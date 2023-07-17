@@ -34,7 +34,7 @@ class FieldValuePush:
     def __init__(self, value: list) -> None:
         if isinstance(value, list):
             if len(value) == 1:
-                self.value = value
+                self.value = value[0]
             else:
                 self.value = {'$each': value}
         else:
@@ -45,7 +45,7 @@ class FieldValuePull:
     def __init__(self, value: list) -> None:
         if isinstance(value, list):
             if len(value) == 1:
-                self.value = value
+                self.value = value[0]
             else:
                 self.value = {'$in': value}
         else:
@@ -56,7 +56,7 @@ class FieldValueAddToSet:
     def __init__(self, value: set) -> None:
         if isinstance(value, set):
             if len(value) == 1:
-                self.value = list(value)
+                self.value = list(value)[0]
             else:
                 self.value = {'$each': list(value)}
         else:
